@@ -1,0 +1,111 @@
+{
+  "name": "string",
+  "type": "Microsoft.Storage/storageAccounts",
+  "apiVersion": "2021-02-01",
+  "sku": {
+    "name": "string",
+    "tier": "string"
+  },
+  "kind": "string",
+  "location": "string",
+  "extendedLocation": {
+    "name": "string",
+    "type": "EdgeZone"
+  },
+  "tags": {},
+  "identity": {
+    "type": "string",
+    "userAssignedIdentities": {}
+  },
+  "properties": {
+    "sasPolicy": {
+      "sasExpirationPeriod": "string",
+      "expirationAction": "Log"
+    },
+    "keyPolicy": {
+      "keyExpirationPeriodInDays": "integer"
+    },
+    "customDomain": {
+      "name": "string",
+      "useSubDomainName": "boolean"
+    },
+    "encryption": {
+      "services": {
+        "blob": {
+          "enabled": "boolean",
+          "keyType": "string"
+        },
+        "file": {
+          "enabled": "boolean",
+          "keyType": "string"
+        },
+        "table": {
+          "enabled": "boolean",
+          "keyType": "string"
+        },
+        "queue": {
+          "enabled": "boolean",
+          "keyType": "string"
+        }
+      },
+      "keySource": "string",
+      "requireInfrastructureEncryption": "boolean",
+      "keyvaultproperties": {
+        "keyname": "string",
+        "keyversion": "string",
+        "keyvaulturi": "string"
+      },
+      "identity": {
+        "userAssignedIdentity": "string"
+      }
+    },
+    "networkAcls": {
+      "bypass": "string",
+      "resourceAccessRules": [
+        {
+          "tenantId": "string",
+          "resourceId": "string"
+        }
+      ],
+      "virtualNetworkRules": [
+        {
+          "id": "string",
+          "action": "Allow",
+          "state": "string"
+        }
+      ],
+      "ipRules": [
+        {
+          "value": "string",
+          "action": "Allow"
+        }
+      ],
+      "defaultAction": "string"
+    },
+    "accessTier": "string",
+    "azureFilesIdentityBasedAuthentication": {
+      "directoryServiceOptions": "string",
+      "activeDirectoryProperties": {
+        "domainName": "string",
+        "netBiosDomainName": "string",
+        "forestName": "string",
+        "domainGuid": "string",
+        "domainSid": "string",
+        "azureStorageSid": "string"
+      }
+    },
+    "supportsHttpsTrafficOnly": "boolean",
+    "isHnsEnabled": "boolean",
+    "largeFileSharesState": "string",
+    "routingPreference": {
+      "routingChoice": "string",
+      "publishMicrosoftEndpoints": "boolean",
+      "publishInternetEndpoints": "boolean"
+    },
+    "allowBlobPublicAccess": "boolean",
+    "minimumTlsVersion": "string",
+    "allowSharedKeyAccess": "boolean",
+    "isNfsV3Enabled": "boolean"
+  },
+  "resources": []
+}
